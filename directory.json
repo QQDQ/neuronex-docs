@@ -747,6 +747,21 @@
         {
           "title": "Modbus TCP Server 模拟器",
           "path": "configuration/modbus-simulator"
+        },
+        {
+          "title": "驱动转换工具",
+          "path": "configuration/driver-migration-tool",
+          "collapsed": true,
+          "children": [
+            {
+              "title": "Kepware 到 Neuron 迁移指南",
+              "path": "configuration/driver-migration-tool/kepware-to-neuron"
+            },
+            {
+              "title": "Litmus Edge 到 Neuron 迁移指南",
+              "path": "configuration/driver-migration-tool/litmus-edge-to-neuron"
+            }
+          ]
         }
       ]
     },
@@ -1954,6 +1969,21 @@
         {
           "title": "Modbus TCP Server Simulator",
           "path": "configuration/modbus-simulator"
+        },
+        {
+          "title": "Driver Migration Tool",
+          "path": "configuration/driver-migration-tool",
+          "collapsed": true,
+          "children": [
+            {
+              "title": "Kepware to Neuron Migration Guide",
+              "path": "configuration/driver-migration-tool/kepware-to-neuron"
+            },
+            {
+              "title": "Litmus Edge to Neuron Migration Guide",
+              "path": "configuration/driver-migration-tool/litmus-edge-to-neuron"
+            }
+          ]
         }
       ]
     },
