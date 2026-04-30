@@ -2,13 +2,13 @@
 
 ## 概述
 
-- **迁移目标**：将 KepwareEX (V6.0 及以上版本) 侧采集配置转换为 EMQX Neuron 可导入的配置。
+- **迁移目标**：将 KEPServerEX (V6.0 及以上版本) 侧采集配置转换为 EMQX Neuron 可导入的配置。
 
-- **转换方式**：使用 EMQ 官网提供的[在线配置转换工具](https://www.emqx.com/zh/online-tools/driver-migration-tool)。
+- **转换方式**：使用 EMQ 官网提供的[在线配置转换工具](https://www.emqx.com/zh/products/emqx-neuron/migrator)。
 
 ## 支持的转换协议
 
-| KepwareEX协议                         | 是否支持 | 备注                                  |
+| KEPServerEX 协议                         | 是否支持 | 备注                                  |
 | ----------------------------------- | ---- | ----------------------------------- |
 | Modbus TCP/IP Ethernet              | 支持   | BCD, 数组不支持                          |
 | Modbus RTU Serial                   | 支持   | BCD, 数组不支持                          |
@@ -28,7 +28,7 @@
 
 ## 在 Kepware 上如何获取配置文件
 
-按下列步骤在 KepwareEX 中导出配置:
+按下列步骤在 KEPServerEX 中导出配置:
 
  - 文件菜单，点击另存为菜单项；
 
@@ -40,9 +40,9 @@
 
 ### 上传与转换
 
-- 打开[官网迁移工具页面](https://www.emqx.com/zh/online-tools/driver-migration-tool)。选择来源为 **Kepware。**
+- 打开[官网迁移工具页面](https://www.emqx.com/zh/products/emqx-neuron/migrator)。选择来源为 **KEPServerEX。**
 
-- 上传[在 Kepware 上如何获取配置文件](#在-kepware-上如何获取配置文件)得到的导出文件。
+- 上传在 [KEPServerEX](#在-kepware-上如何获取配置文件) 得到的导出文件。
 
 - 等待服务端完成转换，查看汇总结果（设备数、标签成功/失败统计等）。
 
@@ -62,7 +62,7 @@
 
 ## EMQX Neuron 侧导入与验证
 
-- 确保 EMQX Neuron 和 KepwareEX 部署在同一网络下，也即 EMQX Neuron 能访问到 KepwareEX 对应采集的设备。
+- 确保 EMQX Neuron 和 KEPServerEX 部署在同一网络下，也即 EMQX Neuron 能访问到 KEPServerEX 对应采集的设备。
 
 - 登录 EMQX Neuron Dashboard 界面。
 

@@ -4,7 +4,7 @@
 
 - **Migration goal**: Convert acquisition configuration from Litmus Edge (V4.0 and above) into a configuration that EMQX Neuron can import.
 
-- **Conversion method**: Use the [online configuration conversion tool](https://www.emqx.com/zh/online-tools/driver-migration-tool) provided on the EMQ website.
+- **Conversion method**: Use the [online configuration conversion tool](https://www.emqx.com/en/products/emqx-neuron/migrator) provided on the EMQ website.
 
 ## Supported protocols for conversion
 
@@ -44,7 +44,7 @@ The export must include structures that can be mapped, such as device (**Device*
 
 ### Upload and convert
 
-- Open the [official migration tool page](https://www.emqx.com/zh/online-tools/driver-migration-tool). Set the source to **Litmus Edge.**
+- Open the [official migration tool page](https://www.emqx.com/en/products/emqx-neuron/migrator). Set the source to **Litmus Edge.**
 
 - Upload the export file obtained in [How to export configuration from Litmus Edge](#how-to-export-configuration-from-litmus-edge).
 

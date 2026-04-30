@@ -4,7 +4,7 @@
 
 - **迁移目标**：将 Litmus Edge （V4.0 及以上版本） 侧采集配置转换为 EMQX Neuron 可导入的配置。
 
-- **转换方式**：使用 EMQ 官网提供的[在线配置转换工具](https://www.emqx.com/zh/online-tools/driver-migration-tool)。
+- **转换方式**：使用 EMQ 官网提供的[在线配置转换工具](https://www.emqx.com/zh/products/emqx-neuron/migrator)。
 
 ## 支持的转换协议
 
@@ -44,9 +44,9 @@
 
 ### 上传与转换
 
-- 打开[官网迁移工具页面](https://www.emqx.com/zh/online-tools/driver-migration-tool)。选择来源为 **Litmus Edge。**
+- 打开[官网迁移工具页面](https://www.emqx.com/zh/products/emqx-neuron/migrator)。选择来源为 **Litmus Edge。**
 
-- 上传[在 Litmus Edge 上如何获取配置文件](#在-litmus-edge-上如何获取配置文件)得到的导出文件。
+- 上传在 [Litmus Edge](#在-litmus-edge-上如何获取配置文件) 得到的导出文件。
 
 - 等待服务端完成转换，查看汇总结果（设备数、标签成功/失败统计等）。
 

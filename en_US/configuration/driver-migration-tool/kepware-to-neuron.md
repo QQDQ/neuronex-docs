@@ -1,14 +1,14 @@
-# Kepware to EMQX Neuron Migration Guide
+# KEPServerEX to EMQX Neuron Migration Guide
 
 ## Overview
 
-- **Migration goal**: Convert acquisition configuration from KepwareEX (V6.0 and above) into a configuration that EMQX Neuron can import.
+- **Migration goal**: Convert acquisition configuration from KEPServerEX (V6.0 and above) into a configuration that EMQX Neuron can import.
 
-- **Conversion method**: Use the [online configuration conversion tool](https://www.emqx.com/zh/online-tools/driver-migration-tool) provided on the EMQ website.
+- **Conversion method**: Use the [online configuration migration tool](https://www.emqx.com/en/products/emqx-neuron/migrator) provided on the EMQ website.
 
 ## Supported protocols for conversion
 
-| KepwareEX protocol                  | Supported | Notes                                                                 |
+| KEPServerEX protocol                  | Supported | Notes                                                                 |
 | ----------------------------------- | --------- | --------------------------------------------------------------------- |
 | Modbus TCP/IP Ethernet              | Yes       | BCD and arrays not supported                                          |
 | Modbus RTU Serial                   | Yes       | BCD and arrays not supported                                          |
@@ -26,9 +26,9 @@
 Protocols not listed are not supported for conversion for now.
 :::
 
-## How to export configuration from Kepware
+## How to export configuration from KEPServerEX
 
-Follow these steps to export configuration in KepwareEX:
+Follow these steps to export configuration in KEPServerEX:
 
 - In the File menu, click **Save As**;
 
@@ -40,11 +40,11 @@ Follow these steps to export configuration in KepwareEX:
 
 ### Upload and convert
 
-Open the [official migration tool page](https://www.emqx.com/zh/online-tools/driver-migration-tool).
+Open the [official migration tool page](https://www.emqx.com/en/products/emqx-neuron/migrator).
 
-Set the source to **Kepware.**
+Set the source to **KEPServerEX.**
 
-Upload the export file obtained in [How to export configuration from Kepware](#how-to-export-configuration-from-kepware).
+Upload the export file obtained in [How to export configuration from KEPServerEX](#how-to-export-configuration-from-kepserverex).
 
 Wait for the server to finish conversion and review the summary (device count, tag success/failure statistics, etc.).
 
@@ -63,7 +63,7 @@ After expanding a device, you can see the detailed reasons for conversion failur
 
 ## Import and verify on the EMQX Neuron side
 
-- Ensure EMQX Neuron and KepwareEX are on the same network so that EMQX Neuron can reach the devices that KepwareEX was collecting from.
+- Ensure EMQX Neuron and KEPServerEX are on the same network so that EMQX Neuron can reach the devices that KEPServerEX was collecting from.
 
 - Log in to the EMQX Neuron Dashboard.
 
@@ -169,8 +169,8 @@ KEPServerEX Modbus TCP address pattern: `[H|]|{area_code}{address}|[.bit|.len]| 
 
 - Polling and subscription modes are supported
 
-- **KepServerEX** does not support exporting certificates. If certificates are configured, conversion to Neuron uses auto-generated certificates, which the user should update afterward.
+- **KEPServerEX** does not support exporting certificates. If certificates are configured, conversion to Neuron uses auto-generated certificates, which the user should update afterward.
 
 #### 3) Protocol name: Mitsubishi Ethernet
 
-- The tool maps different **Mitsubishi Ethernet** device models in **KepServerEX** to three different Neuron drivers respectively.
+- The tool maps different **Mitsubishi Ethernet** device models in **KEPServerEX** to three different Neuron drivers respectively.

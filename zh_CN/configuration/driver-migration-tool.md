@@ -2,16 +2,16 @@
 
 ## 介绍
 
-本功能面向 **将第三方数采平台中的驱动与点位配置，批量迁移为 EMQX Neuron 可导入文件** 的场景。由 EMQ 提供的在线 **驱动配置转换** 能力，可将您在 **Kepware**、**Litmus Edge** 等系统中已配置好的**南向连接与采集点位**，转换为 **EMQX Neuron** 可直接导入的 JSON 配置文件。在从 Kepware、Litmus Edge 等系统迁移到 Neuron 时，可显著减少在 Neuron 中重复录入设备、标签与地址的工作量。
+本功能面向将第三方数采平台中的驱动与点位配置，批量迁移为 EMQX Neuron 可导入文件的场景。由 EMQ 提供的在线 **驱动配置转换** 能力，可将您在 **KEPServerEX**、**Litmus Edge** 等系统中已配置好的**南向连接与采集点位**，转换为 **EMQX Neuron** 可直接导入的 JSON 配置文件。在从 KEPServerEX 、Litmus Edge 等系统迁移到 Neuron 时，可显著减少在 Neuron 中重复录入设备、标签与地址的工作量。
 
-该工具在 **EMQ 官网** 以**在线服务**形式提供，无需在本地安装独立软件。您只需在源平台按文档导出配置，上传至工具页面，完成转换后下载结果，再在 Neuron 侧完成导入与联调即可。
+该工具在 [**EMQ 官网**](https://www.emqx.com/zh/products/emqx-neuron/migrator) 以**在线服务**形式提供，无需在本地安装独立软件。您只需在源平台按文档导出配置，上传至工具页面，完成转换后下载结果，再在 Neuron 侧完成导入与联调即可。
 
 ## 功能概览
 
 | 能力 | 说明 |
 | ---- | ---- |
-| 多来源支持 | 按来源类型选择转换逻辑，目前支持从 **KepwareEX** 与 **Litmus Edge** 导出的配置进行转换。 |
-| 协议级映射 | 将各源平台上的驱动、设备、标签/寄存器模型映射为 Neuron 南向设备与 Group/Tag 结构（具体以各来源文档中的映射表为准）。 |
+| 多来源支持 | 按来源类型选择转换逻辑，目前支持从 **KEPServerEX** 与 **Litmus Edge** 导出的配置进行转换。 |
+| 协议级映射 | 将各源平台上的驱动、标签映射为 Neuron 南向设备与 Group/Tag 结构（具体以各来源文档中的映射表为准）。 |
 | 转换结果可审阅 | 转换完成后可查看汇总信息（如设备数、标签成功/失败统计）；部分失败项会排除在最终可下载的 JSON 之外，并可在界面上查看失败原因。 |
 | 面向 Neuron 的交付物 | 输出为 **EMQX Neuron 可导入的配置 JSON**，在 Neuron Dashboard 的数采（南向）模块中通过「导入」使用。 |
 
@@ -23,7 +23,7 @@
 
 ## 适用场景
 
-- **平台替换**：企业计划用 Neuron 承接原 Kepware 或 Litmus Edge 的采集能力，需批量迁移现网配置。  
+- **平台替换**：企业计划用 Neuron 承接原 KEPServerEX 或 Litmus Edge 的采集能力，需批量迁移现网配置。  
 - **POC/试点**：小范围验证 Neuron 与现场设备的连接与数据质量，希望快速对齐原有标签与寻址。  
 - **灾备与双栈**：在保留原系统的同时，在 Neuron 中快速复现一套等价采集配置。  
 
@@ -31,7 +31,7 @@
 
 | 来源产品 | 版本与说明 | 详细文档 |
 | -------- | ---------- | -------- |
-| Kepware（KEPServerEX） | 适用于 KepwareEX **V6.0 及以上** 等场景；导出为 **JSON** 等要求见文档。 | [Kepware 到 Neuron 迁移指南](./driver-migration-tool/kepware-to-neuron.md) |
+| Kepware（KEPServerEX） | 适用于 KEPServerEX **V6.0 及以上** 等场景；导出为 **JSON** 等要求见文档。 | [Kepware 到 Neuron 迁移指南](./driver-migration-tool/kepware-to-neuron.md) |
 | Litmus Edge | 适用于 **V4.0 及以上**；从 Device Management 导出 **Plain Text** 等步骤见文档。 | [Litmus Edge 到 Neuron 迁移指南](./driver-migration-tool/litmus-edge-to-neuron.md) |
 
 以上两篇文档均包含：支持的协议列表、在源站导出文件的操作说明、官网工具上的上传与下载步骤、**转换失败**时的表现说明、Neuron 侧**导入与验证**建议，以及协议与数据模型的映射说明。请按实际使用的数据选择对应一篇作为主参考。
