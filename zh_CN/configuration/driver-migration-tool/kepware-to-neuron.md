@@ -167,6 +167,8 @@ KEPServerEX Modbus TCP 地址规则：`[H|]|{area_code}{address}|[.bit|.len]| [s
 
 - **KepServerEX** 不支持证书导出，如果配置了证书，转换为 Neuron 的时候会使用自生成的证书，后续由用户自行修改。
 
+- **KepServerEX** 密码为加密密码，不支持密码导出，需要由用户自行填入。
+
 ### 3. 协议名称 Mitsubishi Ethernet
 
 - 工具根据 **KepServerEX** 中 **Mitsubishi Ethernet** 不同的设备型号，分别映射到 Neuron 三个不同的驱动。
