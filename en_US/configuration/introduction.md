@@ -74,6 +74,7 @@ The overall process is shown in the figure below:
 |     Node Name Length       | Maximum 128 characters  |
 |     Tag Name Length      | Maximum 128 characters  |
 | Tag Address Length                  | Maximum 128 characters  | 
+| Tag Description Length                  | Maximum 256 characters  | 
 | Group Name Length         | Maximum 128 characters  | 
 |  Maximum groups per southbound driver      | Maximum 512  | 
 |  Maximum subscribed groups per northbound application      | unlimited  | 

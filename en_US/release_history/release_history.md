@@ -1,5 +1,35 @@
 # Release history
 
+## v3.9.0
+
+Release Date: 2026-05-12
+
+### Enhancements
+
+- **Migration tool**: Supports converting acquisition configuration from **KEPServerEX (Kepware)** and **Litmus Edge** into formats importable by EMQX Neuron; use together with the official online migration tool when applicable. See the [KEPServerEX to EMQX Neuron migration guide](../configuration/driver-migration-tool/kepware-to-neuron.md) and [Litmus Edge to EMQX Neuron migration guide](../configuration/driver-migration-tool/litmus-edge-to-neuron.md).
+
+- **Northbound driver**: Added **Kafka** northbound driver for direct integration with **Azure Fabric**.
+
+- **OPC UA driver**: Added **OPC UA AE** (Alarms & Events) support.
+
+- **Azure IoT Hub**: Northbound Azure IoT Hub supports **offline buffering**, temporarily retaining data during short network outages and uploading after recovery.
+
+- **MQTT driver**: When driver status reporting is enabled, a driver status message is sent as soon as the node starts.
+
+- **Tag configuration**: Tags support **units** and **name editing**; maximum tag **description** length increased to **256** characters; tag configuration and data monitoring views support **displaying units**.
+
+- **Southbound connection status**: After creating a southbound driver node, connection status is shown correctly **before** any tags are configured (currently supported for **Mitsubishi 3E** and **Allen-Bradley 5000 EtherNet/IP**).
+
+- **Standard product package**: The standard package now includes **all CNC driver plugins**.
+
+- **Kafka Connector**: Added Kafka Connector, allowing multiple Kafka sinks to share a Kafka connection.
+
+### Fixes
+
+- Fixed northbound MQTT plugin data reporting issues caused by **NanoSDK**.
+
+- Fixed abnormal UI display after NeuronEX license removal when **ECP** management is cancelled.
+
 ## v3.6.5
 
 Release Date: 2026-04-24

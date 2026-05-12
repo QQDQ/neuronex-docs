@@ -12,4 +12,5 @@
 - [WebSocket 插件](./websocket/websocket.md)：WebSocket 网络协议支持在单个 TCP 连接上提供双向通信通道。借助 NeuronEX WebSocket 插件，用户可以将采集的数据推送到 WebSocket 服务器。
 - [DataStorage 数据存储插件](./DataStorage/DataStorage.md)：DataStorage 插件用于将采集的数据存储到 NeuronEX 内置的 Datalayers 时序数据库中。
 - [OPC UA Server插件](./opcua-server/overview.md)：OPC UA 是一种工业物联网数据传输规范。NeuronEX 支持将 OPC UA Server 作为北向应用，以便将南向设备的数据通过 OPC UA 服务暴露给上层系统或第三方客户端。通过 OPC UA Server，外部系统可以订阅数据变化、读取实时点位，以及下发控制命令。
+- [Kafka 插件](./kafka/overview.md)：Kafka 是一种分布式流式处理平台。NeuronEX Kafka 插件使用户能够将采集的数据发布到 Kafka 以进一步处理。
 

@@ -128,7 +128,10 @@
 | SparkplugB       | SparkplugB 是一种建立在 MQTT 3.1.1 基础上的工业物联网数据传输规范  | 
 | Azure IOT                   | 对接 Azure IOT Hub 平台  | 
 | AWS IOT                   | 对接 AWS IOT Core 平台  | 
-| Websocket              | -  | 
+| Websocket              | 对接 WebSocket 协议  | 
+| OPC UA Server          | 对外提供 OPC UA 服务  | 
+| Kafka              | 对接 Kafka 协议，将采集的数据发布到 Kafka 以进一步处理  | 
+
 
 ### 应用程序
 
