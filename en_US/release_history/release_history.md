@@ -30,6 +30,12 @@ Release Date: 2026-05-12
 
 - Fixed abnormal UI display after NeuronEX license removal when **ECP** management is cancelled.
 
+- Fixed Okta SSO authentication failure. Added mandatory `state` and `nonce` parameters to the OIDC authorization request to comply with Okta’s requirements.
+
+- Fixed the issue where NodeRed loses connection to the server.
+
+- Fix the issue that no logs are printed when MQTT node connection exceptions occur.
+
 ## v3.6.5
 
 Release Date: 2026-04-24
