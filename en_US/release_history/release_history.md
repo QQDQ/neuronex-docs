@@ -34,7 +34,6 @@ Release Date: 2026-05-12
 
 - Fixed the issue where NodeRed loses connection to the server.
 
-- Fix the issue that no logs are printed when MQTT node connection exceptions occur.
 
 ## v3.6.5
 
