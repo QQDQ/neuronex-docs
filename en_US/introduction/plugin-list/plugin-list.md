@@ -108,15 +108,24 @@ For specific instructions on replacing and updating plugins, please contact the 
 
 ## Northbound Plugins
 
-| Protocol Name                                  | Remark                                 | 
-| --------------------------------------- | ----------------------------------- | 
-| RESTful API            | -  |
-| MQTT                   | -  | 
-| MQTT SparkplugB       | -  | 
-| Azure IOT                   | connect to Azure IoT Hub  | 
-| AWS IOT                   | connect to AWS IoT Core  | 
-| Websocket              | -  | 
-| DataProcessing               | push data to data processing module  |
-| DataStorage              | push data to data storage module  |
+### Cloud Connection
+
+| Protocol Name                                  | Remark                                 |
+| --------------------------------------- | ----------------------------------- |
+| RESTful API            | Provides standard RESTful API interfaces   |
+| MQTT                   | MQTT protocol integration   |
+| SparkplugB       | SparkplugB is an industrial IoT data transfer specification built on MQTT 3.1.1   |
+| Azure IOT                   | Integration with Azure IoT Hub   |
+| AWS IOT                   | Integration with AWS IoT Core   |
+| Websocket              | WebSocket protocol integration   |
+| OPC UA Server          | Exposes OPC UA server services   |
+| Kafka              | Kafka protocol integration; publish collected data to Kafka for further processing   |
+
+### Applications
+
+| Protocol Name                                  | Remark              |
+| --------------------------------------- | ------------------- |
+| DataProcessing               | Integration with data processing module   |
+| DataStorage              | Integration with data storage module   |
 
 

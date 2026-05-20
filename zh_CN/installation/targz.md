@@ -12,7 +12,7 @@ $ wget https://www.emqx.com/zh/downloads/neuronex/3.7.0/neuronex-3.7.0-linux-amd
 
 ```bash
 $ tar -zxvf neuronex-3.7.0-linux-amd64.tar.gz
-$ cd neuronex-3.5.0-linux-amd64
+$ cd neuronex-3.7.0-linux-amd64
 ```
 
 ::: tip 

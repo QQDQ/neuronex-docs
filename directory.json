@@ -194,37 +194,14 @@
                   "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/opc-ua/prosys.md"
                 },
                 {
+                  "title": "条件和报警",
+                  "path": "configuration/south-devices/opc-ua/conditions",
+                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/opc-ua/conditions.md"
+                },
+                {
                   "title": "常见问题",
                   "path": "configuration/south-devices/opc-ua/faq",
                   "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/opc-ua/faq.md"
-                }
-              ]
-            },
-            {
-              "title": "OPC DA",
-              "path": "configuration/south-devices/opc-da/overview",
-              "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/opc-da/overview.md",
-              "collapsed": true,
-              "children": [
-                {
-                  "title": "NeuOPC 安装",
-                  "path": "configuration/south-devices/opc-da/install",
-                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/opc-da/install.md"
-                },
-                {
-                  "title": "NeuOPC 远程访问",
-                  "path": "configuration/south-devices/opc-da/remote",
-                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/opc-da/remote.md"
-                },
-                {
-                  "title": "连接 NeuOPC",
-                  "path": "configuration/south-devices/opc-da/neuopc",
-                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/opc-da/neuopc.md"
-                },
-                {
-                  "title": "常见问题",
-                  "path": "configuration/south-devices/opc-da/faq",
-                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/opc-da/faq.md"
                 }
               ]
             },
@@ -534,11 +511,6 @@
               "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/fanuc-focas/fanuc-focas.md"
             },
             {
-              "title": "Mitsubishi CNC",
-              "path": "configuration/south-devices/mitsubishi-cnc/mitsubishi-cnc",
-              "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/mitsubishi-cnc/mitsubishi-cnc.md"
-            },
-            {
               "title": "HEIDENHAIN CNC",
               "path": "configuration/south-devices/heidenhain-cnc/heidenhain-cnc",
               "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/heidenhain-cnc/heidenhain-cnc.md"
@@ -581,6 +553,11 @@
                   "title": "OPC DA",
                   "path": "configuration/south-devices/neuhub/opcda",
                   "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/neuhub/opcda.md"
+                },
+                {
+                  "title": "DCOM 设置",
+                  "path": "configuration/south-devices/opc-da/remote",
+                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/south-devices/opc-da/remote.md"
                 },
                 {
                   "title": " KEPServerEX OPCDA Server 连接示例",
@@ -714,6 +691,11 @@
                   "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/north-apps/opcua-server/uaexpert.md"
                 }
               ]
+            },
+            {
+              "title": "Kafka 插件",
+              "path": "configuration/north-apps/kafka/overview",
+              "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/zh_CN/configuration/north-apps/kafka/overview.md"
             }
           ]
         },
@@ -1423,37 +1405,14 @@
                   "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/opc-ua/prosys.md"
                 },
                 {
+                  "title": "Conditions and Alarms",
+                  "path": "configuration/south-devices/opc-ua/conditions",
+                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/opc-ua/conditions.md"
+                },
+                {
                   "title": "FAQ",
                   "path": "configuration/south-devices/opc-ua/faq",
                   "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/opc-ua/faq.md"
-                }
-              ]
-            },
-            {
-              "title": "OPC DA",
-              "path": "configuration/south-devices/opc-da/overview",
-              "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/opc-da/overview.md",
-              "collapsed": true,
-              "children": [
-                {
-                  "title": "NeuOPC install",
-                  "path": "configuration/south-devices/opc-da/install",
-                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/opc-da/install.md"
-                },
-                {
-                  "title": "NeuOPC remote access",
-                  "path": "configuration/south-devices/opc-da/remote",
-                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/opc-da/remote.md"
-                },
-                {
-                  "title": "Connect to NeuOPC",
-                  "path": "configuration/south-devices/opc-da/neuopc",
-                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/opc-da/neuopc.md"
-                },
-                {
-                  "title": "FAQ",
-                  "path": "configuration/south-devices/opc-da/faq",
-                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/opc-da/faq.md"
                 }
               ]
             },
@@ -1792,6 +1751,11 @@
                   "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/neuhub/opcda.md"
                 },
                 {
+                  "title": "DCOM Settings",
+                  "path": "configuration/south-devices/opc-da/remote",
+                  "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/opc-da/remote.md"
+                },
+                {
                   "title": "Example of KEPServerEX OPCDA Server Connection",
                   "path": "configuration/south-devices/neuhub/example/kepware-da",
                   "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/south-devices/neuhub/example/kepware-da.md"
@@ -1940,6 +1904,11 @@
                   "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/north-apps/opcua-server/uaexpert.md"
                 }
               ]
+            },
+            {
+              "title": "Kafka",
+              "path": "configuration/north-apps/kafka/overview",
+              "url": "https://raw.githubusercontent.com/emqx/neuron-docs/master/en_US/configuration/north-apps/kafka/overview.md"
             }
           ]
         },

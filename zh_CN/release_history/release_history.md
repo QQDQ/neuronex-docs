@@ -1,5 +1,39 @@
 # 发版历史
 
+## v3.9.0
+
+发布日期：2026-05-12
+
+### **增强**
+
+- **迁移工具**：支持将 **KEPServerEX（Kepware）**、**Litmus Edge** 侧采集配置转换为 EMQX Neuron 可导入格式；可配合官网迁移工具使用。详见 [Kepware 到 EMQX Neuron 迁移指南](../configuration/driver-migration-tool/kepware-to-neuron.md)、[Litmus Edge 到 EMQX Neuron 迁移指南](../configuration/driver-migration-tool/litmus-edge-to-neuron.md)。
+
+- **北向驱动**：新增 **Kafka** 北向驱动，可用于直接对接 Azure Fabric；
+  
+- **OPC UA 驱动**：新增 **OPC UA AE**（Alarms & Events，报警与事件）能力。
+
+- **Azure IoT Hub**：北向 Azure IoT Hub 支持离线缓存，网络短时不可用时数据可暂存并在恢复后继续上送。
+
+- **MQTT 驱动**：启用驱动状态上报时，在启动节点伊始，立即发送一条驱动状态消息。
+
+- **点位配置**：点位支持配置单位；支持修改点位名称；点位描述最大长度提升至 **256** 字符；点位配置与数据监控相关界面支持展示单位。
+
+- **南向连接状态**：新建南向驱动节点后，在未配置点位前即可正确显示驱动连接状态（当前支持 **Mitsubishi 3E**、**Allen-Bradley 5000 EtherNet/IP**）。
+
+- **标准产品包**：标准产品包现包含全部 CNC 驱动插件。
+
+- **Kafka Connector**： 新增 Kafka Connector，允许多个 Kafka sink 共享一个 Kafka 连接。
+
+### **修复**
+
+- 修复由 NanoSDK 引起的北向 MQTT 插件数据上报问题。
+
+- 修复取消 ECP 管理导致 NeuronEX 许可证被移除后，界面展示异常的问题。
+
+- **修复：Okta SSO 认证失败问题** ，在 OIDC 授权请求中补充了 Okta 要求的 `state` 和 `nonce` 参数，解决认证报错问题。
+
+- 修复 NodeRed 丢失与服务器的连接问题。
+
 ## v3.6.5
 
 发布日期：2026-04-24
