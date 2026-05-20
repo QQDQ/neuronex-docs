@@ -2,7 +2,7 @@
 
 ## v3.9.0
 
-Release Date: 2026-05-12
+Release Date: 2026-05-20
 
 ### Enhancements
 
