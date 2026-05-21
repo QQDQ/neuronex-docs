@@ -34,6 +34,10 @@ Release Date: 2026-05-20
 
 - Fixed the issue where NodeRed loses connection to the server.
 
+- Fixed the SSL connection failure issue when using MQTT protocol version 5.
+
+- Fixed Shared Source Schema Lost on Wildcard Rule Detach. When two or more rules share a SHARED=true source (e.g., neuronStream) and both use wildcard queries (SELECT *), stopping one rule caused the remaining rule(s) to start emitting empty tuples {}. 
+
 
 ## v3.6.5
 
