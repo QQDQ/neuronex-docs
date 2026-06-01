@@ -2,7 +2,7 @@
 
 ## v3.9.0
 
-Release Date: 2026-05-12
+Release Date: 2026-05-20
 
 ### Enhancements
 
@@ -34,6 +34,10 @@ Release Date: 2026-05-12
 
 - Fixed the issue where NodeRed loses connection to the server.
 
+- Fixed the SSL connection failure issue when using MQTT protocol version 5.
+
+- Fixed Shared Source Schema Lost on Wildcard Rule Detach. When two or more rules share a SHARED=true source (e.g., neuronStream) and both use wildcard queries (SELECT *), stopping one rule caused the remaining rule(s) to start emitting empty tuples {}. 
+
 
 ## v3.6.5
 
@@ -47,6 +51,8 @@ Release Date: 2026-04-24
 ### Fixes
 
 - Fixed a difficult-to-reproduce race condition where sub-topologies or rules using shared connections could hang during specific connection error scenarios.
+- Fixed Kafka Sink Transport Resource Leak: Resolved an issue where the Kafka sink's underlying transport goroutines (specifically the discover goroutine) were not being terminated when a rule was stopped. This was caused by the kafka-go writer not automatically closing external transport connections. Kafka Sink now explicitly calls CloseIdleConnections() to ensure all resources are properly freed.
+
 
 
 ## v3.8.1
@@ -68,6 +74,10 @@ Release Date: 2026-04-14
 - Changed Datalayers plugin to asynchronous connection.
 
 ### Fixes
+
+- Added timeout-based reconnection mechanism for the Siemens S7 driver to resolve connection failure issues.
+
+- Fixed a Neuron crash caused by the Allen‑Bradley MicroLogix 1400 driver.
 
 - Fixed the issue of disconnection on the NodeRed Flow page.
 
@@ -154,7 +164,7 @@ Release Date: 2026-02-07
     
     - **Data Type Extension**: Added support for the `String Array` data type.
         
-    - **Browsing Performance Optimization**: Adjusted the layout of the OPC UA tag browsing page and expanded the display of namespace nodes. Added a selection counter for tags and increased the maximum limit for exporting or adding tags to collection groups to 10,000.
+    - **Browsing Performance Optimization**: Adjusted the layout of the OPC UA tag browsing page and expanded the display of namespace nodes. Added a selection counter for tags.The upper limit for exporting tags has been changed to 10,000 tags, and the upper limit for adding tags to the collection group has been changed to 1,000 tags.
         
 - **Modbus Driver Enhancement**: Added mandatory validation for the Modbus address range (0–65535) during tag configuration to ensure accuracy.
     

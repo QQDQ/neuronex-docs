@@ -171,6 +171,8 @@ KEPServerEX Modbus TCP address pattern: `[H|]|{area_code}{address}|[.bit|.len]| 
 
 - **KEPServerEX** does not support exporting certificates. If certificates are configured, conversion to Neuron uses auto-generated certificates, which the user should update afterward.
 
+- The password for **KepServerEX** is encrypted and does not support password export; it must be entered manually by the user.
+
 #### 3) Protocol name: Mitsubishi Ethernet
 
 - The tool maps different **Mitsubishi Ethernet** device models in **KEPServerEX** to three different Neuron drivers respectively.
